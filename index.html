@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raine's Universe | Happy 11th</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- INTRO MODAL (New) -->
+    <div id="intro-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h1>Hey Raine...</h1>
+            <p>
+                I wanted to make something special for our 11th month. 
+                You are my universe and my brightest star. 
+                <br><br>
+                Put your volume up and enjoy.
+            </p>
+            <button id="start-btn">Continue &rarr;</button>
+        </div>
+    </div>
+
+    <!-- The Canvas acts as our screen -->
+    <canvas id="universe"></canvas>
+    
+    <!-- Music Controls -->
+    <div class="music-controls">
+        <button id="music-btn">⏸️ Pause Music</button>
+    </div>
+
+    <!-- Hidden Audio Element -->
+    <!-- Note: Browser needs user interaction (click) to play audio, which the Modal provides! -->
+    <audio id="bg-music" loop>
+        <source src="music.mp3" type="audio/mp3">
+    </audio>
+    
+    <!-- A subtle hint for her to interact -->
+    <div class="hint">Tap the screen to see the magic...</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
